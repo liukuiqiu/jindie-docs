@@ -4,9 +4,9 @@ export default defineConfig({
   lang: 'zh-CN',
   title: '锦蝶SCRM',
   description: '锦蝶SCRM',
-  head: [['link', { rel: 'icon', href: 'assets/logo.png' }]],
+  head: [['link', { rel: 'icon', href: 'public/logo.png' }]],
   themeConfig: {
-    logo: 'assets/logo.png',
+    logo: 'public/logo.png',
     algolia: {
       apiKey: '0HLKT3CRBK',
       indexName: 'jindie-docs'
