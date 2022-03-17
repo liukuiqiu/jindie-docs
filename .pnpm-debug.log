@@ -1,0 +1,22 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 error pnpm": {
+    "code": "ELIFECYCLE",
+    "errno": "ENOENT",
+    "syscall": "spawn",
+    "file": "sh",
+    "pkgid": "jindie-docs@1.0.0",
+    "stage": "docs:dev",
+    "script": "vitepress dev docs --host",
+    "pkgname": "jindie-docs",
+    "err": {
+      "name": "pnpm",
+      "message": "jindie-docs@1.0.0 docs:dev: `vitepress dev docs --host`\nspawn ENOENT",
+      "code": "ELIFECYCLE",
+      "stack": "pnpm: jindie-docs@1.0.0 docs:dev: `vitepress dev docs --host`\nspawn ENOENT\n    at ChildProcess.<anonymous> (/Users/sky/.nvm/versions/node/v14.16.0/pnpm-global/5/node_modules/.pnpm/registry.npmmirror.com+pnpm@6.32.3/node_modules/pnpm/dist/pnpm.cjs:92278:22)\n    at ChildProcess.emit (events.js:315:20)\n    at maybeClose (internal/child_process.js:1048:16)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:288:5)"
+    }
+  },
+  "2 warn pnpm:global": " Local package.json exists, but node_modules missing, did you mean to install?"
+}
