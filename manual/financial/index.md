@@ -2,17 +2,17 @@
 <ImageViewer />
 聚合了核心信息和快捷入口，帮你轻松掌控全局。登陆系统后，首先会进入系统首页，首页分为8块内容。
 
-![首页](../../images/manual/financial/1.png)
+![首页](/assets/manual/financial/1.png)
 
 ## 1.1 通话呼叫及快捷操作
-![通话呼叫及快捷操作](../../images/manual/financial/1.1-1.png)
+![通话呼叫及快捷操作](/assets/manual/financial/1.1-1.png)
 
 - 当前席位状态
 未签入/已签入：线路接入状态
 示闲中：线路接通正常，坐席空闲
 拨号中/通话中：坐席通话状态
 小休中：点击“示忙”
-![示忙](../../images/manual/financial/1.1-2.png)
+![示忙](/assets/manual/financial/1.1-2.png)
  坐席状态变为“小休中”，坐席暂时不会接入电话
 - 群呼
 可以控制是否加入群呼
@@ -24,13 +24,13 @@
 
 - 切换线路：点击自如切换云通话或锦呼话机拨打
 
-![切换线路](../../images/manual/financial/1.1-3.png)
+![切换线路](/assets/manual/financial/1.1-3.png)
 
 云通话：可对接任何中继线、电话线、卡机、网络电话等方式。
 锦呼话机：专用话机，可插5张电话卡,任意切换。
 话机设置
-![云通话](../../images/manual/financial/1.1-4.png)
-![云通话](../../images/manual/financial/1.1-5.png)
+![云通话](/assets/manual/financial/1.1-4.png)
+![云通话](/assets/manual/financial/1.1-5.png)
 
 
 - 放大镜：可以按照客户姓名或电话进行快捷查询所有客户信息。
@@ -42,28 +42,28 @@
 
 ## 1.2 数据概览
 展示核心数据，一手掌握最近销售情况
-![数据概览](../../images/manual/financial/1.2-1.png)
+![数据概览](/assets/manual/financial/1.2-1.png)
 
 ## 1.3 到期时间
 展示使用情况、一对一服务窗口
-![到期时间](../../images/manual/financial/1.3-1.png)
+![到期时间](/assets/manual/financial/1.3-1.png)
 
 ## 1.4 公司及时情况反馈
 展示公司最新实时动态，自动推送最新的客户上门信息、签单信息、和风控放款成功信息等
-![公司及时情况反馈](../../images/manual/financial/1.4-1.png)
+![公司及时情况反馈](/assets/manual/financial/1.4-1.png)
 
 ## 1.5 任务及公告通知
 展示正在处理中的任务列表，包括我下发的任务+我待办的任务；展示最新的公告信息
-![任务及公告通知](../../images/manual/financial/1.5-1.png)
+![任务及公告通知](/assets/manual/financial/1.5-1.png)
 
 ## 1.6 素材内容
 展示企业小站+个人名片+文件、文章、海报、表单等。
-![素材内容](../../images/manual/financial/1.6-1.png)
+![素材内容](/assets/manual/financial/1.6-1.png)
 
 ## 1.7 排行榜及业绩指标完成率
 展示企业员工业绩排行榜：按“今日通话、本月上门、本月签单、本月放款”进行分类统计员工的排行榜单；展示企业员工业绩指标完成率：按“签单金额、放款金额、回款金额”统计目标金额/完成金额，分析业务人员任务完成进度。
-![排行榜及业绩指标完成率](../../images/manual/financial/1.7-1.png)
+![排行榜及业绩指标完成率](/assets/manual/financial/1.7-1.png)
 
 ## 1.8 锦辰动态
 展示锦辰的最新动态，包括常用工具、产品更新、客户案例、市场活动等；
-![锦辰动态](../../images/manual/financial/1.8-1.png)
+![锦辰动态](/assets/manual/financial/1.8-1.png)
