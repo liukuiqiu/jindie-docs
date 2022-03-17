@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /assets/logo.png
+heroImage: assets/logo.png
 heroText: 锦蝶SCRM
 tagline: 锦蝶SCRM
 actionText: 快速上手 →
