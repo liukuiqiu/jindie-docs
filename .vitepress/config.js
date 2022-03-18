@@ -33,6 +33,7 @@ export default defineConfig({
     nav: [
       {
         text: 'Admin',
+        target: '_blank',
         link: '/admin/#/'
       },
       // { text: '锦蝶SCRM', link: '/scrm/' },
