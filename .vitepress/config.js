@@ -28,7 +28,8 @@ export default defineConfig({
     logo: 'logo.png',
     algolia: {
       apiKey: '0HLKT3CRBK',
-      indexName: 'jindie-docs'
+      indexName: 'jindie-docs',
+      placeholder: '搜索文档',
     },
     nav: [
       // {
