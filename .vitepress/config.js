@@ -12,6 +12,10 @@ export default defineConfig({
       indexName: 'jindie-docs'
     },
     nav: [
+      {
+        text: 'Admin',
+        link: '/admin/#/',
+      },
       // { text: '锦蝶SCRM', link: '/scrm/' },
       {
         text: '操作手册',
@@ -23,19 +27,15 @@ export default defineConfig({
       },
       {
         text: '更新日志',
-        link: '/update/',
-        items: [
-          { text: '锦蝶SCRM通用版', link: '/update/default/' },
-          { text: '锦蝶SCRM金融版', link: '/update/financial/' }
-        ]
+        link: '/update/default/',
+        // items: [
+        //   { text: '锦蝶SCRM通用版', link: '/update/default/' },
+        //   { text: '锦蝶SCRM金融版', link: '/update/financial/' }
+        // ]
       },
       {
         text: '常见问题',
         link: '/problem/',
-        items: [
-          { text: '锦蝶SCRM通用版', link: '/problem/default/' },
-          { text: '锦蝶SCRM金融版', link: '/problem/financial/' }
-        ]
       }
     ],
     sidebar: {
@@ -69,38 +69,47 @@ export default defineConfig({
           ]
         }
       ],
-      '/update/default/': [
+      '/update/': [
         {
-          text: '锦蝶SCRM通用版 - 更新日志',
+          text: '更新日志',
           children: [
-            { text: '2022-02-23', link: '/update/default/' },
+            { 
+              text: '锦蝶SCRM通用版',
+              link: '/update/default/',
+              children: [
+                { text: '暂无更新', link: '/update/default/' }
+              ]
+            },
+            { 
+              text: '锦蝶SCRM金融版', 
+              link: '/update/financial/',
+              children: [
+                { text: '2022-03-16', link: '/update/financial/' },
+                { text: '2022-03-15', link: '/update/financial/2022-03-15' }
+              ] 
+            },
           ]
         }
       ],
-      '/update/financial/': [
+      // '/update/financial/': [
+      //   {
+      //     text: '锦蝶SCRM金融版 - 更新日志',
+      //     children: [
+      //       { text: '2022-03-16', link: '/update/financial/' },
+      //       { text: '2022-03-15', link: '/update/financial/2022-03-15' },
+      //     ]
+      //   }
+      // ],
+      '/problem/': [
         {
-          text: '锦蝶SCRM金融版 - 更新日志',
+          text: '常见问题',
           children: [
-            { text: '2022-03-16', link: '/update/financial/' },
+            { text: '锦蝶SCRM通用版', link: '/problem/' },
+            { text: '锦蝶SCRM金融版', link: '/problem/financial' },
           ]
         }
       ],
-      '/problem/default/': [
-        {
-          text: '锦蝶SCRM通用版 -常见问题',
-          children: [
-            { text: '客户公海', link: '/problem/default/' },
-          ]
-        }
-      ],
-      '/problem/financial/': [
-        {
-          text: '锦蝶SCRM金融版 -常见问题',
-          children: [
-            { text: '客户公海', link: '/problem/financial/' },
-          ]
-        }
-      ]
+      
     }
   }
 })
