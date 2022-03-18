@@ -1,9 +1,28 @@
 import { defineConfig } from 'vitepress'
 
+import { readdirSync } from 'fs'
+
+function generateSidebar(dir) {
+  console.log('readdirSync: ', readdirSync)
+  const readDir = readdirSync('./src' + dir)
+  const sibebar = readDir.map((v) => {
+    const name = v.replace('.md', '')
+    return {
+      text: name,
+      link: dir + name
+    }
+  })
+  console.log('sibebar: ', sibebar)
+  console.log('readDir: ', readDir)
+  return sibebar
+}
+
+
 export default defineConfig({
   lang: 'zh-CN',
   title: '锦蝶SCRM',
   description: '锦蝶SCRM',
+  srcDir: 'src',
   head: [['link', { rel: 'icon', href: 'logo.png' }]],
   themeConfig: {
     logo: 'logo.png',
@@ -14,7 +33,7 @@ export default defineConfig({
     nav: [
       {
         text: 'Admin',
-        link: '/admin/#/',
+        link: '/admin/#/'
       },
       // { text: '锦蝶SCRM', link: '/scrm/' },
       {
@@ -27,7 +46,7 @@ export default defineConfig({
       },
       {
         text: '更新日志',
-        link: '/update/default/',
+        link: '/update/default/'
         // items: [
         //   { text: '锦蝶SCRM通用版', link: '/update/default/' },
         //   { text: '锦蝶SCRM金融版', link: '/update/financial/' }
@@ -35,7 +54,7 @@ export default defineConfig({
       },
       {
         text: '常见问题',
-        link: '/problem/',
+        link: '/problem/'
       }
     ],
     sidebar: {
@@ -65,7 +84,7 @@ export default defineConfig({
             { text: '第五章 财务', link: '/manual/financial/5' },
             { text: '第六章 人力', link: '/manual/financial/6' },
             { text: '第七章 报表', link: '/manual/financial/7' },
-            { text: '第八章 设置', link: '/manual/financial/8' },
+            { text: '第八章 设置', link: '/manual/financial/8' }
           ]
         }
       ],
@@ -73,21 +92,21 @@ export default defineConfig({
         {
           text: '更新日志',
           children: [
-            { 
+            {
               text: '锦蝶SCRM通用版',
               link: '/update/default/',
-              children: [
-                { text: '暂无更新', link: '/update/default/' }
-              ]
+              children: generateSidebar('/update/default/')
+              // children: [{ text: '暂无更新', link: '/update/default/' }]
             },
-            { 
-              text: '锦蝶SCRM金融版', 
+            {
+              text: '锦蝶SCRM金融版',
               link: '/update/financial/',
-              children: [
-                { text: '2022-03-16', link: '/update/financial/' },
-                { text: '2022-03-15', link: '/update/financial/2022-03-15' }
-              ] 
-            },
+              children: generateSidebar('/update/financial/')
+              // children: [
+              //   { text: '2022-03-16', link: '/update/financial/' },
+              //   { text: '2022-03-15', link: '/update/financial/2022-03-15' }
+              // ]
+            }
           ]
         }
       ],
@@ -105,11 +124,10 @@ export default defineConfig({
           text: '常见问题',
           children: [
             { text: '锦蝶SCRM通用版', link: '/problem/' },
-            { text: '锦蝶SCRM金融版', link: '/problem/financial' },
+            { text: '锦蝶SCRM金融版', link: '/problem/financial' }
           ]
         }
-      ],
-      
+      ]
     }
   }
 })
