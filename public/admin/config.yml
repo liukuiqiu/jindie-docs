@@ -16,9 +16,9 @@ collections:
     slug: '{{slug}}' # 文件名称模板
     fields: # front matter 对应的表单
       - { label: '更新日期', name: 'title', widget: 'string' }
-      - label: '版本',
-        name: 'version',
-        widget: 'select',
+      - label: '版本'
+        name: 'version'
+        widget: 'select'
         options:
           - { label: '通用版1', value: 'default' }
           - { label: '金融版', value: 'financial' }
