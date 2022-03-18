@@ -94,13 +94,13 @@ export default defineConfig({
           children: [
             {
               text: '锦蝶SCRM通用版',
-              // link: '/update/default/',
+              link: generateSidebar('/update/default/')[0]['link'],
               children: generateSidebar('/update/default/')
               // children: [{ text: '暂无更新', link: '/update/default/' }]
             },
             {
               text: '锦蝶SCRM金融版',
-              // link: '/update/financial/',
+              link: generateSidebar('/update/financial/')[0]['link'],
               children: generateSidebar('/update/financial/')
               // children: [
               //   { text: '2022-03-16', link: '/update/financial/' },
