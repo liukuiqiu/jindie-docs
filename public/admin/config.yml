@@ -9,17 +9,20 @@ media_folder: 'media'
 publish_mode: editorial_workflow
 # 一系列文章类型的集合
 collections:
-  - name: 'update' # 名称，用于后台路由
-    label: 'update' # UI 标签
-    folder: '/update/{{version}}' # 储存这类文章文件的所在文件夹
+  - name: 'update/default' # 名称，用于后台路由
+    label: '更新日志-通用版' # UI 标签
+    folder: '/update/default/' # 储存这类文章文件的所在文件夹
     create: true # 允许创建
     slug: '{{slug}}' # 文件名称模板
     fields: # front matter 对应的表单
       - { label: '更新日期', name: 'title', widget: 'string' }
-      - label: '版本'
-        name: 'version'
-        widget: 'select'
-        options:
-          - { label: '通用版', value: 'default' }
-          - { label: '金融版', value: 'financial' }
+      - { label: '内容', name: 'body', widget: 'markdown' }
+
+  - name: 'update/financial' # 名称，用于后台路由
+    label: '更新日志-金融版' # UI 标签
+    folder: '/update/financial/' # 储存这类文章文件的所在文件夹
+    create: true # 允许创建
+    slug: '{{slug}}' # 文件名称模板
+    fields: # front matter 对应的表单
+      - { label: '更新日期', name: 'title', widget: 'string' }
       - { label: '内容', name: 'body', widget: 'markdown' }
