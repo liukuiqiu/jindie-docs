@@ -4,14 +4,14 @@ backend:
   repo: 65style/jindie-docs
   branch: main
 # 上传媒体文件的目录
-media_folder: 'media'
+media_folder: '/src/assets/media'
 # 发布模式
 publish_mode: editorial_workflow
 # 一系列文章类型的集合
 collections:
   - name: 'update1' # 名称，用于后台路由
     label: '更新日志-通用版' # UI 标签
-    folder: '/update/default/' # 储存这类文章文件的所在文件夹
+    folder: '/src/update/default/' # 储存这类文章文件的所在文件夹
     create: true # 允许创建
     slug: '{{slug}}' # 文件名称模板
     fields: # front matter 对应的表单
@@ -19,7 +19,7 @@ collections:
       - { label: '内容', name: 'body', widget: 'markdown' }
   - name: 'update2' # 名称，用于后台路由
     label: '更新日志-金融版' # UI 标签
-    folder: '/update/financial/' # 储存这类文章文件的所在文件夹
+    folder: '/src/update/financial/' # 储存这类文章文件的所在文件夹
     create: true # 允许创建
     slug: '{{slug}}' # 文件名称模板
     fields: # front matter 对应的表单
