@@ -20,6 +20,6 @@ collections:
         name: 'version'
         widget: 'select'
         options:
-          - { label: '通用版1', value: 'default' }
+          - { label: '通用版', value: 'default' }
           - { label: '金融版', value: 'financial' }
       - { label: '内容', name: 'body', widget: 'markdown' }
