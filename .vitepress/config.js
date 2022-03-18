@@ -31,11 +31,11 @@ export default defineConfig({
       indexName: 'jindie-docs'
     },
     nav: [
-      {
-        text: 'Admin',
-        target: '_blank',
-        link: '/admin/#/'
-      },
+      // {
+      //   text: 'Admin',
+      //   target: '_blank',
+      //   link: '/admin/#/'
+      // },
       // { text: '锦蝶SCRM', link: '/scrm/' },
       {
         text: '操作手册',
@@ -47,7 +47,7 @@ export default defineConfig({
       },
       {
         text: '更新日志',
-        link: '/update/default/'
+        link: generateSidebar('/update/default/')[0]['link']
         // items: [
         //   { text: '锦蝶SCRM通用版', link: '/update/default/' },
         //   { text: '锦蝶SCRM金融版', link: '/update/financial/' }
