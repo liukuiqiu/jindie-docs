@@ -27,7 +27,7 @@ export default defineConfig({
   themeConfig: {
     logo: 'logo.png',
     algolia: {
-      apiKey: '0HLKT3CRBK',
+      apiKey: '0f3436179fd1dbd59180d181aa8b2bf7',
       indexName: 'jindie-docs',
       placeholder: '搜索文档',
     },

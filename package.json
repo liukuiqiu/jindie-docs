@@ -6,11 +6,13 @@
   "scripts": {
     "dev": "vitepress dev --host",
     "build": "vitepress build",
-    "serve": "vitepress serve"
+    "serve": "vitepress serve",
+    "algolia": "atomic-algolia"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "atomic-algolia": "^0.3.19",
     "viewerjs": "^1.10.3",
     "vuepress-plugin-viewer": "^1.0.0"
   },
