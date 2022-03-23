@@ -1,7 +1,7 @@
 # 这里配置你的博客所在的 repo
 backend:
   name: github
-  repo: 65style/jindie-docs
+  repo: liukuiqiu/jindie-docs
   branch: main
 # 上传媒体文件的目录
 media_folder: '/src/assets/media'
