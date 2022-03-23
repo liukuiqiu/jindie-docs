@@ -5,17 +5,19 @@ import { readdirSync } from 'fs'
 function generateSidebar(dir) {
   console.log('readdirSync: ', readdirSync)
   const readDir = readdirSync('./src' + dir)
-  const sibebar = readDir.map((v) => {
-    const name = v.replace('.md', '')
+    .map((v) => v.replace('.md', ''))
+    .sort((a, b) => new Date(b).getTime() - new Date(a).getTime())
+  const sibebar = readDir.map((filename) => {
     return {
-      text: name,
-      link: dir + name
+      text: filename,
+      link: dir + filename
     }
-  })
+  }).filter(v=> v.text !== 'index')
   console.log('sibebar: ', sibebar)
   console.log('readDir: ', readDir)
   return sibebar
 }
+
 
 
 export default defineConfig({
@@ -29,7 +31,7 @@ export default defineConfig({
     algolia: {
       apiKey: '0f3436179fd1dbd59180d181aa8b2bf7',
       indexName: 'jindie-docs',
-      placeholder: '搜索文档',
+      placeholder: '搜索文档'
     },
     nav: [
       // {
@@ -40,7 +42,7 @@ export default defineConfig({
       // { text: '锦蝶SCRM', link: '/scrm/' },
       {
         text: '操作手册',
-        ariaLabel: '锦蝶SCRM 菜单',
+        // ariaLabel: '锦蝶SCRM 菜单',
         items: [
           { text: '锦蝶SCRM通用版', link: '/manual/default/' },
           { text: '锦蝶SCRM金融版', link: '/manual/financial/' }
@@ -48,11 +50,19 @@ export default defineConfig({
       },
       {
         text: '更新日志',
-        link: generateSidebar('/update/default/')[0]['link']
-        // items: [
-        //   { text: '锦蝶SCRM通用版', link: '/update/default/' },
-        //   { text: '锦蝶SCRM金融版', link: '/update/financial/' }
-        // ]
+        // link: generateSidebar('/update/default/')[0]['link']
+        items: [
+          {
+            text: '锦蝶SCRM通用版',
+            // link: firstUpdatePostPath('/update/default/'),
+            link: '/update/default/'
+          },
+          {
+            text: '锦蝶SCRM金融版',
+            // link: firstUpdatePostPath('/update/financial/')
+            link: '/update/financial/'
+          }
+        ]
       },
       {
         text: '常见问题',
@@ -90,37 +100,44 @@ export default defineConfig({
           ]
         }
       ],
-      '/update/': [
+      // ...generateSidebar('锦蝶SCRM通用版 - 更新日志', '/update/default/'),
+      // ...generateSidebar('锦蝶SCRM金融版 - 更新日志', '/update/financial/'),
+      '/update/default/': [
         {
           text: '更新日志',
           children: [
-            {
-              text: '锦蝶SCRM通用版',
-              link: generateSidebar('/update/default/')[0]['link'],
-              children: generateSidebar('/update/default/')
-              // children: [{ text: '暂无更新', link: '/update/default/' }]
-            },
-            {
-              text: '锦蝶SCRM金融版',
-              link: generateSidebar('/update/financial/')[0]['link'],
-              children: generateSidebar('/update/financial/')
-              // children: [
-              //   { text: '2022-03-16', link: '/update/financial/' },
-              //   { text: '2022-03-15', link: '/update/financial/2022-03-15' }
-              // ]
-            }
+            // {
+            //   text: '最近更新',
+            //   link: '/update/default/'
+            // },
+            ...generateSidebar('/update/default/'),
+            // {
+            //   text: '2022-03-18',
+            //   link: '/update/default/2022-03-16'
+            // }
           ]
         }
       ],
-      // '/update/financial/': [
-      //   {
-      //     text: '锦蝶SCRM金融版 - 更新日志',
-      //     children: [
-      //       { text: '2022-03-16', link: '/update/financial/' },
-      //       { text: '2022-03-15', link: '/update/financial/2022-03-15' },
-      //     ]
-      //   }
-      // ],
+      '/update/financial/': [
+        {
+          text: '更新日志',
+          children: [
+            // {
+            //   text: '最近更新',
+            //   link: '/update/financial/'
+            // },
+            ...generateSidebar('/update/financial/'),
+            // {
+            //   text: '2022-03-22',
+            //   link: '/update/financial/2022-03-22'
+            // },
+            // {
+            //   text: '2022-03-16',
+            //   link: '/update/financial/2022-03-16'
+            // }
+          ]
+        }
+      ],
       '/problem/': [
         {
           text: '常见问题',
