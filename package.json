@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "atomic-algolia": "^0.3.19",
+    "github-webhook-handler": "^1.0.0",
     "viewerjs": "^1.10.3",
     "vuepress-plugin-viewer": "^1.0.0"
   },
