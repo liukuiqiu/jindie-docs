@@ -4,7 +4,8 @@ backend:
   repo: liukuiqiu/jindie-docs
   branch: main
 # 上传媒体文件的目录
-media_folder: '/static/media'
+media_folder: 'src/assets/media'
+public_folder: "/assets/media"
 # 发布模式
 publish_mode: editorial_workflow
 # 一系列文章类型的集合
