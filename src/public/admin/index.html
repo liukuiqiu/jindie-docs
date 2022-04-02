@@ -13,11 +13,24 @@
 
   <script>
     (function () {
+      // 监听发布
       CMS.registerEventListener({
         name: 'postPublish',
-        handler: ({ author, entry }) => console.log(JSON.stringify({ author, data: entry.get('data') })),
+        handler: ({ author, entry }) => {
+          console.log('entry: ', entry);
+          console.log({ author, data: entry.get('data') })
+        }
       });
-      
+
+      // 监听删除
+      CMS.registerEventListener({
+        name: 'preUnpublish',
+        handler: ({ author, entry }) => {
+          console.log('entry: ', entry);
+          console.log({ author, data: entry.get('data') })
+        },
+      });
+
     })()
   </script>
 </body>
