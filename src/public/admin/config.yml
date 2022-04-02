@@ -5,7 +5,7 @@ backend:
   branch: main
 # 上传媒体文件的目录
 media_folder: 'src/assets/media'
-public_folder: "/assets/media"
+public_folder: '/assets/media'
 # 发布模式
 publish_mode: editorial_workflow
 # 一系列文章类型的集合
@@ -16,6 +16,7 @@ collections:
     create: true # 允许创建
     slug: '{{slug}}' # 文件名称模板
     fields: # front matter 对应的表单
+      - { label: '版本', name: 'version', widget: 'hidden', default: 'default' }
       - { label: '更新日期', name: 'title', widget: 'string' }
       - { label: '内容', name: 'body', widget: 'markdown' }
   - name: 'update2' # 名称，用于后台路由
@@ -24,5 +25,11 @@ collections:
     create: true # 允许创建
     slug: '{{slug}}' # 文件名称模板
     fields: # front matter 对应的表单
+      - {
+          label: '版本',
+          name: 'version',
+          widget: 'hidden',
+          default: 'financial'
+        }
       - { label: '更新日期', name: 'title', widget: 'string' }
       - { label: '内容', name: 'body', widget: 'markdown' }
