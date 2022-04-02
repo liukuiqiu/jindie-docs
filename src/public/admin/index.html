@@ -18,7 +18,8 @@
         name: 'postPublish',
         handler: ({ author, entry }) => {
           console.log('entry: ', entry);
-          console.log({ author, data: entry.get('data') })
+          var data = JSON.stringify(entry.get('data'))
+          console.log('data: ', data);
         }
       });
 
@@ -27,7 +28,8 @@
         name: 'preUnpublish',
         handler: ({ author, entry }) => {
           console.log('entry: ', entry);
-          console.log({ author, data: entry.get('data') })
+          var data = JSON.stringify(entry.get('data'))
+          console.log('data: ', data);
         },
       });
     })()
