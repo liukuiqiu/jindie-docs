@@ -1,12 +1,17 @@
 import { defineConfig } from 'vitepress'
 
-import { readdirSync } from 'fs'
+import { readdirSync, statSync } from 'fs'
 
 function generateSidebar(dir) {
   console.log('readdirSync: ', readdirSync)
   const readDir = readdirSync('./src' + dir)
-    .map((v) => v.replace('.md', ''))
-    .sort((a, b) => new Date(b).getTime() - new Date(a).getTime())
+  
+    .sort((a, b) => {
+      const statA = statSync('./src' + dir + '/' + a)
+      const statB = statSync('./src' + dir + '/' + b)
+      return statB.mtime - statA.mtime
+    }).map((v) => v.replace('.md', ''))
+    console.log('readDir111: ', readDir);
   const sibebar = readDir.map((filename) => {
     return {
       text: filename,
@@ -55,12 +60,12 @@ export default defineConfig({
           {
             text: '锦蝶SCRM通用版',
             // link: firstUpdatePostPath('/update/default/'),
-            link: '/update/default/'
+            link: generateSidebar('/update/default/')[0]['link']
           },
           {
             text: '锦蝶SCRM金融版',
             // link: firstUpdatePostPath('/update/financial/')
-            link: '/update/financial/'
+            link: generateSidebar('/update/financial/')[0]['link']
           }
         ]
       },
