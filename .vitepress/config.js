@@ -5,9 +5,9 @@ import { readdirSync, statSync } from 'fs'
 function generateSidebar(dir) {
   console.log('readdirSync: ', readdirSync)
   const readDir = readdirSync('./src' + dir)
-  
     .sort((a, b) => {
       const statA = statSync('./src' + dir + '/' + a)
+      console.log('statA: ', statA);
       const statB = statSync('./src' + dir + '/' + b)
       return statB.mtime - statA.mtime
     }).map((v) => v.replace('.md', ''))
