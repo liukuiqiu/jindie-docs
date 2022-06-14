@@ -5,13 +5,11 @@ import { readdirSync, statSync } from 'fs'
 function generateSidebar(dir) {
   console.log('readdirSync: ', readdirSync)
   const readDir = readdirSync('./src' + dir)
-    .sort((a, b) => {
-      const statA = statSync('./src' + dir + '/' + a)
-      console.log('statA: ', statA);
-      const statB = statSync('./src' + dir + '/' + b)
-      return statB.mtime - statA.mtime
-    }).map((v) => v.replace('.md', ''))
-    console.log('readDir111: ', readDir);
+    .map((v) => v.replace('.md', '')).reverse()
+    // .sort((a, b) => {
+    //   const a = 
+    //   return new Date(b).getTime() - new Date(a).getTime()
+    // })
   const sibebar = readDir.map((filename) => {
     return {
       text: filename,
