@@ -48,7 +48,8 @@ export default defineConfig({
         // ariaLabel: '锦蝶SCRM 菜单',
         items: [
           { text: '锦蝶SCRM通用版', link: '/manual/default/' },
-          { text: '锦蝶SCRM金融版', link: '/manual/financial/' }
+          { text: '锦蝶SCRM金融版', link: '/manual/financial/' },
+          { text: '锦蝶金融版APP', link: '/manual/app/' }
         ]
       },
       {
@@ -100,6 +101,15 @@ export default defineConfig({
             { text: '第六章 人力', link: '/manual/financial/6' },
             { text: '第七章 报表', link: '/manual/financial/7' },
             { text: '第八章 设置', link: '/manual/financial/8' }
+          ]
+        }
+      ],
+      '/manual/app/': [
+        {
+          text: '锦蝶金融版APP - 操作手册',
+          children: [
+            { text: '新手须知', link: '/manual/app/' },
+            { text: '功能介绍', link: '/manual/app/2' },
           ]
         }
       ],
