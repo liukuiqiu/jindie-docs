@@ -39,4 +39,5 @@ collections:
     create: false # 允许创建
     slug: '{{slug}}' # 文件名称模板
     fields: # front matter 对应的表单
+      - { label: '标题', name: 'title', widget: 'string' }
       - { label: '内容', name: 'body', widget: 'markdown' }
