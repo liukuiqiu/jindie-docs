@@ -43,7 +43,7 @@ title: 新手须知
 
 操作入口:工作台-营销中心-我的客户-客户详情-编辑客户
 
-![app-1](/assets/manual/app/app-1.png)
+![app-1](/assets/media/manual-app-1.png)
 
 
 ### 2.	如何针对不同的人员配置不同的权限，达到团队协作？
@@ -57,7 +57,7 @@ title: 新手须知
 
 新增签单：工作台-营销中心-我的客户-客户详情-更多操作-新增签单，根据打开页面输入或选择信息，保存即可。
 
-![app-2](/assets/manual/app/app-2.png)
+![app-2](/assets/media/manual-app-2.png)
 
 单据查询 
 
@@ -65,5 +65,5 @@ title: 新手须知
 
 签单列表顶部筛选、排序、放大镜查询，点击即可展开对应项。
 
-![app-3](/assets/manual/app/app-3.png)
+![app-3](/assets/media/manual-app-3.png)
 
