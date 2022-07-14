@@ -33,3 +33,8 @@ collections:
         }
       - { label: '更新日期', name: 'title', widget: 'string' }
       - { label: '内容', name: 'body', widget: 'markdown' }
+  - name: 'financial' # 名称，用于后台路由
+    label: '操作日志-金融版' # UI 标签
+    folder: '/src/manual/financial/' # 储存这类文章文件的所在文件夹
+    create: false # 允许创建
+    slug: '{{slug}}' # 文件名称模板
