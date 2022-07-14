@@ -37,7 +37,7 @@ collections:
     label: '操作日志-金融版' # UI 标签
     folder: '/src/manual/financial/' # 储存这类文章文件的所在文件夹
     create: false # 允许创建
-    slug: '{{slug}}' # 文件名称模板
+    # slug: '{{slug}}' # 文件名称模板
     fields: # front matter 对应的表单
       - { label: '标题', name: 'title', widget: 'string' }
       - { label: '内容', name: 'body', widget: 'markdown' }
