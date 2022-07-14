@@ -68,10 +68,10 @@ export default defineConfig({
           }
         ]
       },
-      {
-        text: '常见问题',
-        link: '/problem/'
-      }
+      // {
+      //   text: '常见问题',
+      //   link: '/problem/'
+      // }
     ],
     sidebar: {
       '/manual/default/': [
@@ -151,15 +151,15 @@ export default defineConfig({
           ]
         }
       ],
-      '/problem/': [
-        {
-          text: '常见问题',
-          children: [
-            { text: '锦蝶SCRM通用版', link: '/problem/' },
-            { text: '锦蝶SCRM金融版', link: '/problem/financial' }
-          ]
-        }
-      ]
+      // '/problem/': [
+      //   {
+      //     text: '常见问题',
+      //     children: [
+      //       { text: '锦蝶SCRM通用版', link: '/problem/' },
+      //       { text: '锦蝶SCRM金融版', link: '/problem/financial' }
+      //     ]
+      //   }
+      // ]
     }
   }
 })
