@@ -38,3 +38,5 @@ collections:
     folder: '/src/manual/financial/' # 储存这类文章文件的所在文件夹
     create: false # 允许创建
     slug: '{{slug}}' # 文件名称模板
+    fields: # front matter 对应的表单
+      - { label: '内容', name: 'body', widget: 'markdown' }
