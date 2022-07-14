@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 import { readdirSync, statSync } from 'fs'
 
 function generateSidebar(dir) {
-  console.log('readdirSync: ', readdirSync)
+  // console.log('readdirSync: ', readdirSync)
   const readDir = readdirSync('./src' + dir)
     .map((v) => v.replace('.md', '')).reverse()
     // .sort((a, b) => {
@@ -16,8 +16,8 @@ function generateSidebar(dir) {
       link: dir + filename
     }
   }).filter(v=> v.text !== 'index')
-  console.log('sibebar: ', sibebar)
-  console.log('readDir: ', readDir)
+  // console.log('sibebar: ', sibebar)
+  console.log(`${dir}:`, readDir)
   return sibebar
 }
 

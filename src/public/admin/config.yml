@@ -36,7 +36,7 @@ collections:
   - name: 'financial' # 名称，用于后台路由
     label: '操作日志-金融版' # UI 标签
     folder: '/src/manual/financial/' # 储存这类文章文件的所在文件夹
-    create: true # 允许创建
+    create: false # 允许创建
     slug: '{{slug}}' # 文件名称模板
     fields: # front matter 对应的表单
       - { label: '标题', name: 'title', widget: 'string' }
@@ -44,7 +44,7 @@ collections:
   - name: 'default' # 名称，用于后台路由
     label: '操作日志-通用版' # UI 标签
     folder: '/src/manual/default/' # 储存这类文章文件的所在文件夹
-    create: true # 允许创建
+    create: false # 允许创建
     slug: '{{slug}}' # 文件名称模板
     fields: # front matter 对应的表单
       - { label: '标题', name: 'title', widget: 'string' }
@@ -52,7 +52,7 @@ collections:
   - name: 'app' # 名称，用于后台路由
     label: '操作日志-APP' # UI 标签
     folder: '/src/manual/app/' # 储存这类文章文件的所在文件夹
-    create: true # 允许创建
+    create: false # 允许创建
     slug: '{{slug}}' # 文件名称模板
     fields: # front matter 对应的表单
       - { label: '标题', name: 'title', widget: 'string' }
