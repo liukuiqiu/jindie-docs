@@ -25,8 +25,8 @@ function generateSidebar(dir) {
 
 export default defineConfig({
   lang: 'zh-CN',
-  title: '锦蝶SCRM',
-  description: '锦蝶SCRM',
+  title: '锦辰文档',
+  description: '锦辰文档',
   srcDir: 'src',
   head: [['link', { rel: 'icon', href: 'logo.png' }]],
   themeConfig: {
@@ -47,8 +47,8 @@ export default defineConfig({
         text: '操作手册',
         // ariaLabel: '锦蝶SCRM 菜单',
         items: [
-          { text: '锦蝶SCRM通用版', link: '/manual/default/' },
-          { text: '锦蝶SCRM金融版', link: '/manual/financial/' },
+          { text: '锦蝴SCRM', link: '/manual/default/' },
+          { text: '锦蝶助贷系统（高级版）', link: '/manual/financial/' },
           { text: '锦蝶金融版APP', link: '/manual/app/' }
         ]
       },
@@ -57,12 +57,12 @@ export default defineConfig({
         // link: generateSidebar('/update/default/')[0]['link']
         items: [
           {
-            text: '锦蝶SCRM通用版',
+            text: '锦蝴SCRM',
             // link: firstUpdatePostPath('/update/default/'),
             link: generateSidebar('/update/default/')[0]['link']
           },
           {
-            text: '锦蝶SCRM金融版',
+            text: '锦蝶助贷系统（高级版）',
             // link: firstUpdatePostPath('/update/financial/')
             link: generateSidebar('/update/financial/')[0]['link']
           }
@@ -76,10 +76,10 @@ export default defineConfig({
     sidebar: {
       '/manual/default/': [
         {
-          text: '锦蝶SCRM通用版 - 操作手册',
+          text: '锦蝴SCRM - 操作手册',
           children: [
             { text: '第一章 企业微信后台管理', link: '/manual/default/' },
-            { text: '第二章 锦蝶 SCRM 后台管理', link: '/manual/default/2' },
+            { text: '第二章 锦蝴 SCRM 后台管理', link: '/manual/default/2' },
             { text: '第三章 首页', link: '/manual/default/3' },
             { text: '第四章 客户管理', link: '/manual/default/4' },
             { text: '第五章 拓客工具', link: '/manual/default/5' },
@@ -91,7 +91,7 @@ export default defineConfig({
       ],
       '/manual/financial/': [
         {
-          text: '锦蝶SCRM金融版 - 操作手册',
+          text: '锦蝶助贷系统（高级版） - 操作手册',
           children: [
             { text: '第一章 首页', link: '/manual/financial/' },
             { text: '第二章 SCRM', link: '/manual/financial/2' },
