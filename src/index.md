@@ -1,8 +1,8 @@
 ---
 home: true
 heroImage: logo.png
-heroText: 锦蝶SCRM
-tagline: 锦蝶SCRM
+heroText: 锦蝴SCRM
+tagline: 锦蝴SCRM
 actionText: 快速上手 →
 actionLink: /manual/default/
 features:

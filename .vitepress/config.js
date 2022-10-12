@@ -106,7 +106,7 @@ export default defineConfig({
       ],
       '/manual/app/': [
         {
-          text: '锦蝶金融版APP - 操作手册',
+          text: '锦蝶APP - 操作手册',
           children: [
             { text: '新手须知', link: '/manual/app/' },
             { text: '功能介绍', link: '/manual/app/2' },
