@@ -1,12 +1,12 @@
 ---
 home: true
 heroImage: logo.png
-heroText: 锦蝴SCRM
-tagline: 锦蝴SCRM
+heroText: 锦蚁云商
+tagline: 锦蚁云商
 actionText: 快速上手 →
 actionLink: /manual/default/
 features:
-- title: 锦蝴SCRM
+- title: 锦蚁云商
   details: 获客>转化>裂变，玩转你的私域流量
 - title: 锦蝶助贷系统（高级版）
   details: 银行助贷中介系统发明与开创者！一直被模仿，从未被超越！
