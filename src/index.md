@@ -16,11 +16,6 @@ hero:
     #   text: 立即登录
     #   link: https://github.com/vuejs/vitepress
 
-# heroImage: logo.png
-# heroText: 锦蚁云商
-# tagline: 锦蚁云商
-# actionText: 快速上手 →
-# actionLink: /manual/default/
 features:
   - title: 锦蚁云商
     icon: 🐜

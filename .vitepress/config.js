@@ -78,7 +78,7 @@ export default defineConfig({
           text: '锦蚁云商 - 操作手册',
           items: [
             { text: '第一章 企业微信后台管理', link: '/manual/default/' },
-            { text: '第二章 锦蝴 SCRM 后台管理', link: '/manual/default/2' },
+            { text: '第二章 锦蚁云商后台管理', link: '/manual/default/2' },
             { text: '第三章 首页', link: '/manual/default/3' },
             { text: '第四章 客户管理', link: '/manual/default/4' },
             { text: '第五章 拓客工具', link: '/manual/default/5' },
