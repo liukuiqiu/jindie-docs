@@ -47,7 +47,7 @@ export default defineConfig({
         // ariaLabel: '锦蝶SCRM 菜单',
         items: [
           { text: '锦蚁云商', link: '/manual/default/' },
-          { text: '锦蝶助贷系统（高级版）', link: '/manual/financial/' },
+          { text: '锦蝶助贷系统', link: '/manual/financial/' },
           { text: '锦蝶助贷APP', link: '/manual/app/' }
         ]
       },
@@ -61,7 +61,7 @@ export default defineConfig({
             link: generateSidebar('/update/default/')[0]['link']
           },
           {
-            text: '锦蝶助贷系统（高级版）',
+            text: '锦蝶助贷系统',
             // link: firstUpdatePostPath('/update/financial/')
             link: generateSidebar('/update/financial/')[0]['link']
           }
@@ -76,7 +76,7 @@ export default defineConfig({
       '/manual/default/': [
         {
           text: '锦蚁云商 - 操作手册',
-          children: [
+          items: [
             { text: '第一章 企业微信后台管理', link: '/manual/default/' },
             { text: '第二章 锦蝴 SCRM 后台管理', link: '/manual/default/2' },
             { text: '第三章 首页', link: '/manual/default/3' },
@@ -90,8 +90,8 @@ export default defineConfig({
       ],
       '/manual/financial/': [
         {
-          text: '锦蝶助贷系统（高级版） - 操作手册',
-          children: [
+          text: '锦蝶助贷系统 - 操作手册',
+          items: [
             { text: '第一章 首页', link: '/manual/financial/' },
             { text: '第二章 SCRM', link: '/manual/financial/2' },
             { text: '第三章 销售', link: '/manual/financial/3' },
@@ -106,7 +106,7 @@ export default defineConfig({
       '/manual/app/': [
         {
           text: '锦蝶APP - 操作手册',
-          children: [
+          items: [
             { text: '新手须知', link: '/manual/app/' },
             { text: '功能介绍', link: '/manual/app/2' },
           ]
@@ -117,7 +117,7 @@ export default defineConfig({
       '/update/default/': [
         {
           text: '更新日志',
-          children: [
+          items: [
             // {
             //   text: '最近更新',
             //   link: '/update/default/'
@@ -133,7 +133,7 @@ export default defineConfig({
       '/update/financial/': [
         {
           text: '更新日志',
-          children: [
+          items: [
             // {
             //   text: '最近更新',
             //   link: '/update/financial/'
@@ -153,12 +153,15 @@ export default defineConfig({
       // '/problem/': [
       //   {
       //     text: '常见问题',
-      //     children: [
+      //     items: [
       //       { text: '锦蝶SCRM通用版', link: '/problem/' },
       //       { text: '锦蝶SCRM金融版', link: '/problem/financial' }
       //     ]
       //   }
       // ]
+    },
+    footer: {
+      copyright: 'Copyright © 2022-present docs.jinchen.cc'
     }
   }
 })
