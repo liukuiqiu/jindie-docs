@@ -35,6 +35,11 @@ export default defineConfig({
       indexName: 'jindie-docs',
       placeholder: '搜索文档'
     },
+    outlineTitle: '在此页面上',
+    docFooter: {
+      prev: '上一页',
+      next: '下一页'
+    },
     nav: [
       // {
       //   text: 'Admin',
