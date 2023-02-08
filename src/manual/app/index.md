@@ -76,46 +76,46 @@ title: 新手须知
 （1）接通的电话即会产生一条通话录音
 （2）接通且产生录音产生的通话会记录对应的录音；若是为未录音则不会显示录音
 
-<!-- ![11](/assets/media/2.8.1.png "11") -->
+![11](/assets/media/2.8.1.png "11")
 
-<img src="/assets/media/2.8.1.png" width="300" />
+<!-- <img src="/assets/media/2.8.1.png" width="300" /> -->
 
 ### 设置
 
 1、 以小米手机为例，在【应用管理】中找到找到锦蝶助贷APP应用，开启“自启动”，进入【权限管理】开启全部权限
 
-<!-- ![11](/assets/media/2.8.2.png "11") -->
+![11](/assets/media/2.8.2.png "11")
 
-<img src="/assets/media/2.8.2.png" width="300" />
+<!-- <img src="/assets/media/2.8.2.png" width="300" /> -->
 
-<!-- ![11](/assets/media/2.8.3.png "11") -->
+![11](/assets/media/2.8.3.png "11")
 
-<img src="/assets/media/2.8.3.png" width="300" />
+<!-- <img src="/assets/media/2.8.3.png" width="300" /> -->
 
-<!-- ![11](/assets/media/2.8.4.png "11") -->
+![11](/assets/media/2.8.4.png "11")
 
-<img src="/assets/media/2.8.4.png" width="300" />
+<!-- <img src="/assets/media/2.8.4.png" width="300" /> -->
 
-<!-- ![11](/assets/media/2.8.5.png "11") -->
+![11](/assets/media/2.8.5.png "11")
 
-<img src="/assets/media/2.8.5.png" width="300" />
+<!-- <img src="/assets/media/2.8.5.png" width="300" /> -->
 
 ### 开启手机的录音功能
 
 1、直接开启手机录音功能（建议）
 还是以小米手机为例：在【设置】中找到录音相关设置，开启自动录音
 
-<!-- ![11](/assets/media/2.8.6.png "11") -->
+![11](/assets/media/2.8.6.png "11")
 
-<img src="/assets/media/2.8.6.png" width="300" />
+<!-- <img src="/assets/media/2.8.6.png" width="300" /> -->
 
-<!-- ![11](/assets/media/2.8.7.png "11") -->
+![11](/assets/media/2.8.7.png "11")
 
-<img src="/assets/media/2.8.7.png" width="300" />
+<!-- <img src="/assets/media/2.8.7.png" width="300" /> -->
 
-<!-- ![11](/assets/media/2.8.8.png "11") -->
+![11](/assets/media/2.8.8.png "11")
 
-<img src="/assets/media/2.8.8.png" width="300" />
+<!-- <img src="/assets/media/2.8.8.png" width="300" /> -->
 
 <span style="color:red">注意</span>
 
